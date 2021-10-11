@@ -17,6 +17,8 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     flexGrow: "1",
     cursor: "pointer",
+    marginLeft: theme.spacing(20),
+    fontWeight: "750",
   },
   bar: {
     background: "#0E86D4",
@@ -43,6 +45,10 @@ function Header() {
         <Typography variant="h4" className={classes.logo}>
           GROW@TCS2021
         </Typography>
+        <img
+          className="header__img"
+          src="https://resources.mynewsdesk.com/image/upload/t_next_gen_logo_limit_x2/gqpugvbe4omrvbu7no3n.jpg"
+        />
         <div className={classes.navlinks}>
           <Link to="/" className={classes.link}>
             Home
